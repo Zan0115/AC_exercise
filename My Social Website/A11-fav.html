@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body style="background-color:rgba(252, 249, 220, 0.973);">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+    <div class="container-fluid py-2" style="background-color:gold">
+      <a class="navbar-brand" href="#">My Friend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">favorite</a>
+          </li>
+        </ul>
+
+        <!-- Search Form -->
+        <form class="d-flex" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+          <button class="btn btn-outline-success" type="submit" style="background-color: rgba(174, 199, 236, 0.959)">Search</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- User List -->
+  <div class="container mt-5">
+    <div class="dataPanel row d-flex justify-content-center">
+
+    </div>
+  </div>
+
+  <!-- pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination mt-3 d-flex justify-content-center" id="paginator">
+
+    </ul>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="attributes">
+            <li class="user-data-name"></li>
+            <li class="user-data-surname"></li>
+            <li class="user-data-email"></li>
+            <li class="user-data-gender"></li>
+            <li class="user-data-age"></li>
+            <li class="user-data-region"></li>
+            <li class="user-data-birthday"></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="A11-fav.js"></script>
+</body>
+
+</html>
